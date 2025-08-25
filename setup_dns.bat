@@ -30,10 +30,13 @@ IF %ERRORLEVEL% NEQ 0 (
     python -m ensurepip --upgrade
 )
 
-:: Instala requests
-echo Instalando biblioteca requests...
+:: Atualiza pip
+echo Atualizando pip...
 python -m pip install --upgrade pip
-python -m pip install requests
+
+:: Instala bibliotecas necessárias
+echo Instalando bibliotecas necessarias (requests e beautifulsoup4)...
+python -m pip install --upgrade requests beautifulsoup4
 
 :: Executa o script principal
 IF EXIST "%SCRIPT_PRINCIPAL%" (
