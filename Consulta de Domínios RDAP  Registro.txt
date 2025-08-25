@@ -1,0 +1,43 @@
+Consulta de Domínios RDAP / Registro.br
+
+🚀 Verifique domínios nacionais e internacionais rapidamente!
+
+Este repositório possui um script em Python que consulta:
+
+✅ Disponibilidade do domínio
+
+🌐 Origem do registro (Registro.br / RDAP.org)
+
+📅 Data de expiração
+
+🖧 Servidores DNS
+
+👤 Dono / entidade responsável (quando disponível)
+
+Os resultados são salvos em CSV (resultado.csv).
+
+Como usar
+
+1️⃣ Adicione os domínios
+
+Coloque os domínios que quer consultar em dominios.txt, um por linha.
+
+2️⃣ Execute o setup
+
+Abra setup_dns.bat.
+
+Ele vai instalar Python, pip, requests (se necessário) e rodar o script principal automaticamente.
+
+3️⃣ Veja os resultados
+
+O CSV gerado (resultado.csv) terá:
+
+Dominio | Disponibilidade | Origem | Expiração | Servidor DNS
+
+Observações
+
+Funciona em Windows com internet.
+
+Nenhuma chave de API ou cadastro é necessário.
+
+Domínios .br usam Registro.br; internacionais usam RDAP.org.
